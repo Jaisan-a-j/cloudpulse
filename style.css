@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.875rem 1.25rem 0.875rem 1.25rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+}
+
+.fa-brands {
+  font-size: 1.4rem;
+  color: rgb(4, 157, 246);
+}
+
+.header-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: normal;
+}
