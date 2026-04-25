@@ -90,7 +90,8 @@ header {
   align-items: stretch;
 }
 
-.feature-main-heading {
+.feature-main-heading,
+.pricing-main-heading {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -100,7 +101,8 @@ header {
 .feature-card {
   min-height: 7.5rem;
   border-radius: 0.8rem;
-  border: 2px solid rgb(205, 199, 199);
+  border: 2px solid rgb(244, 239, 239);
+  box-shadow: 0 15px 40px -25px rgba(0, 0, 0, 1.2);
   background-color: #ffffff;
   padding: 1rem 5%;
   display: flex;
@@ -108,11 +110,76 @@ header {
   gap: 1rem;
 }
 
-.analytics-image {
+.analytics-image,
+.basic-image {
   height: 3rem;
   display: flex;
 }
 
 .feature-sub-text {
   color: rgb(114, 110, 110);
+}
+
+/*------ Pricing section   ------*/
+
+.pricing-section {
+  padding: 0 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.pricing-card {
+  min-height: 7.5rem;
+  border-radius: 0.8rem;
+  border: 2px solid rgb(244, 239, 239);
+  box-shadow: 0 15px 40px -25px rgba(0, 0, 0, 1.2);
+  background-color: #ffffff;
+  padding: 1rem 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pricing-subheading-section {
+  display: flex;
+}
+.pricing-subheading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.pricing-text {
+  font-weight: 500;
+}
+
+.pricing-list {
+  list-style-position: inside;
+}
+.pricing-list {
+  font-weight: 400;
+}
+.pricing-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pricing-amount-section {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.pricing-amount-section span {
+  font-size: 1rem;
+}
+
+.pricing-upgrade-button {
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  background-color: blue;
+  color: white;
+  border: none;
 }
