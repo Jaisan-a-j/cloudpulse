@@ -28,7 +28,7 @@ header {
   font-size: 1.5rem;
 }
 
-.fa-brands {
+.fa-affiliatetheme {
   font-size: 1.4rem;
   color: rgb(4, 157, 246);
 }
@@ -182,4 +182,106 @@ header {
   background-color: blue;
   color: white;
   border: none;
+}
+
+/*------ Menu section   ------*/
+
+.overlay {
+  z-index: 100;
+  height: 100vh;
+  width: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.menu-page {
+  z-index: 200;
+  height: 100vh;
+  width: 70%;
+  background-color: rgb(8, 29, 77);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  transform: translateX(105%);
+}
+
+.is-menu-open {
+  transform: translateX(0);
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+.overlay {
+  visibility: hidden;
+}
+
+.is-overlay-open {
+  visibility: visible;
+}
+
+.menu-page-heading {
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-page-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.menu-page-name {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.fa-xmark {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.menu-page-content {
+  padding: 1rem 2rem;
+}
+.menu-page-content-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.menu-page-content-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.menu-page-button {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-page-resources {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.fa-angle-right {
+  font-size: 1rem;
 }
