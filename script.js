@@ -1,4 +1,4 @@
-const menuButton = document.querySelector(".header-navbar");
+const menuButton = document.querySelector(".header-hamberger-menu");
 const menuPage = document.querySelector(".menu-page");
 const menuPageCloseButton = document.querySelector(".fa-xmark");
 const body = document.querySelector("body");
